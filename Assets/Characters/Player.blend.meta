@@ -35,6 +35,14 @@ ModelImporter:
     100058: Upper_Arm_R
     100060: Upper_Leg_L
     100062: Upper_Leg_R
+    100064: Body
+    100066: Hair
+    100068: Helmet
+    100070: Pants
+    100072: Platebody
+    100074: Platelegs
+    100076: Shirt
+    100078: Shoes
     400000: Armature
     400002: Chest
     400004: Cube
@@ -67,20 +75,89 @@ ModelImporter:
     400058: Upper_Arm_R
     400060: Upper_Leg_L
     400062: Upper_Leg_R
+    400064: Body
+    400066: Hair
+    400068: Helmet
+    400070: Pants
+    400072: Platebody
+    400074: Platelegs
+    400076: Shirt
+    400078: Shoes
     4300000: Cube
+    4300002: Helmet
+    4300004: Platebody
+    4300006: Platelegs
+    4300008: Hair
+    4300010: Shoes
+    4300012: Shirt
+    4300014: Pants
+    4300016: Body
     7400000: Default Take
     7400002: Idle
     7400004: Run
     7400006: Walk
     9500000: //RootNode
     13700000: Cube
+    13700002: Body
+    13700004: Hair
+    13700006: Helmet
+    13700008: Pants
+    13700010: Platebody
+    13700012: Platelegs
+    13700014: Shirt
+    13700016: Shoes
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 3a1855ee1ab250b4c9414b4cf0b26622, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hair
+    second: {fileID: 2100000, guid: 2fcf973799d01144091f2a2f4a781191, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material
     second: {fileID: 2100000, guid: 3ed725f7d4fa6408cab10eb306af6454, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 158a58ab4d163e64db3d1f170130c8e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_dark
+    second: {fileID: 2100000, guid: 9a41f5967f1c0144494b5eb69824a9bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pants
+    second: {fileID: 2100000, guid: 2f508b745fa31e14599d42979feb1a4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shirt
+    second: {fileID: 2100000, guid: 32e324bae1622de4a984389fea694e56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoe
+    second: {fileID: 2100000, guid: a98bb3b90c1178e479d844f558ed786d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: f07088dd76d8ada488710febcfcedc8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Underclothes
+    second: {fileID: 2100000, guid: febabe11ba5de50419896aa010ff8769, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
