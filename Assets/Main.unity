@@ -3443,6 +3443,7 @@ GameObject:
   - component: {fileID: 705482242}
   - component: {fileID: 705482246}
   - component: {fileID: 705482248}
+  - component: {fileID: 705482249}
   - component: {fileID: 705482247}
   m_Layer: 0
   m_Name: Enemy
@@ -3534,14 +3535,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 705482241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1edb1ebae00a5d542b40f4ece95d17a9, type: 3}
+  m_Script: {fileID: 11500000, guid: bf28cd1793017e84abd9e82c9cc81c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 40
   damage:
-    baseValue: 5
+    baseValue: 10
   armor:
-    baseValue: 3
+    baseValue: 2
 --- !u!114 &705482248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3555,6 +3556,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 4
   interactionTransform: {fileID: 705482245}
+--- !u!114 &705482249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 705482241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557131d6f040edc43ba7a385f00eceac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
+  attackDelay: 0.6
 --- !u!1001 &707352412
 Prefab:
   m_ObjectHideFlags: 0
@@ -7854,6 +7868,7 @@ GameObject:
   - component: {fileID: 1685912221}
   - component: {fileID: 1685912222}
   - component: {fileID: 1685912224}
+  - component: {fileID: 1685912223}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7961,6 +7976,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13558d412f270a84faba1aec97180f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1685912223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1685912215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557131d6f040edc43ba7a385f00eceac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
+  attackDelay: 0.6
 --- !u!114 &1685912224
 MonoBehaviour:
   m_ObjectHideFlags: 0
