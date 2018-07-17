@@ -17,6 +17,7 @@ public class CharacterCombat : MonoBehaviour {
 	public event System.Action OnAttack;
 
 	CharacterStats myStats;
+	CharacterStats opponentStats;
 
 	// Use this for initialization
 	void Start ()
@@ -38,8 +39,8 @@ public class CharacterCombat : MonoBehaviour {
 	{
 		if (attackCooldown <= 0f)
 		{
-			StartCoroutine(DoDamage(targetStats, attackDelay));
 
+			opponentStats = targetStats;
 			if (OnAttack != null)
 				OnAttack();
 
@@ -54,6 +55,15 @@ public class CharacterCombat : MonoBehaviour {
 		yield return new WaitForSeconds(delay);
 		stats.TakeDamage(myStats.damage.GetValue());
 		if (stats.currentHealth <= 0)
+		{
+			InCombat = false;
+		}
+	}
+
+	public void AttackHit_AnimationEvent()
+	{
+		opponentStats.TakeDamage(myStats.damage.GetValue());
+		if (opponentStats.currentHealth <= 0)
 		{
 			InCombat = false;
 		}
