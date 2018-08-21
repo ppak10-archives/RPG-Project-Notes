@@ -14,7 +14,7 @@ public class CharacterCombat : MonoBehaviour {
 	public float attackDelay = .6f;
 
 	public bool InCombat { get; private  set; }
-	public event System.Action OnAttack;
+	public event System.Action OnAttack; // Creates system action for OnAttack method stored in CharacterAnimator script
 
 	CharacterStats myStats;
 	CharacterStats opponentStats;
@@ -35,12 +35,18 @@ public class CharacterCombat : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+    	/// Attack method in called by controller class to deal damage
+    	/// </summary>
+    	/// <param name="targetStats">
+    	/// Passes variable encapsulating the stats of character recieving damage
+    	/// </param>
 	public void Attack (CharacterStats targetStats)
 	{
-		if (attackCooldown <= 0f)
+		if (attackCooldown <= 0f) // if attack cooldown is a negative value (i.e. not in cooldown)
 		{
 
-			opponentStats = targetStats;
+			opponentStats = targetStats; // sets stats of opponent to target
 			if (OnAttack != null)
 				OnAttack();
 
